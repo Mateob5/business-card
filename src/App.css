@@ -1,38 +1,119 @@
-.App {
+body {
+  background-color: #23252c;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  color: rgb(191, 196, 201);
+  /* Agregar margin y padding para centrar el contenido en la página */
+  margin: 0;
+  padding: 20px;
+}
+
+.card {
+  width: 370px;
+  height: 910px;
+  background-color: #1a1b21;
+  border-radius: 10px;
+  margin: 0 auto; /* Centrar horizontalmente */
+  position: relative;
   text-align: center;
+  /* Agregar sombra para dar profundidad */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.profile-photo {
+  width: 370px;
+  height: 310px;
+  border-radius: 10px 10px 0 0;
+  /* Agregar sombra interna para dar profundidad */
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+a {
+  color: rgb(191, 196, 201);
+  text-decoration: none;
+  transition: color 0.3s ease; /* Transición suave al cambiar de color */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+a:hover {
+  color: skyblue;
+}
+
+button {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: medium;
+  border-radius: 6px;
+  width: 275px;
+  height: 39px;
+  border: none;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  color: #1a1b21; /* Cambiar color del texto */
+  cursor: pointer; /* Cambiar el cursor al pasar por encima */
+  transition: background-color 0.3s ease; /* Transición suave al cambiar de color de fondo */
 }
 
-.App-link {
-  color: #61dafb;
+button:hover {
+  background-color: #4e5668; /* Cambiar el color de fondo al pasar por encima */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.text, h2 {
+  text-align: left;
+  margin-left: 22px;
+}
+
+h1 {
+  margin-top: 17px;
+}
+
+.profesion {
+  margin: -7px;
+  color: skyblue;
+}
+
+.page {
+  margin: 17px;
+  margin-bottom: 25px;
+}
+
+.bottom-links {
+  background-color: #161619;
+  width: 370px;
+  height: 60px;
+  border-radius: 0 0 10px 10px;
+  margin-top: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 15px 0px 15px 0px;
+}
+
+.media-icons {
+  font-size: 34px;
+  margin-top: 8px;
+  margin-right: 25px;
+  margin-left: 3px;
+  color: rgb(191, 196, 201); /* Agregar color a los iconos */
+  transition: color 0.3s ease; /* Transición suave al cambiar de color */
+}
+
+.media-icons:hover {
+  color: skyblue; /* Cambiar el color al pasar por encima */
+}
+
+.info {
+  margin-top: 30px;
+}
+
+.mail-icon {
+  font-size: 21px;
+  margin-right: 4px;
+  margin-bottom: -5px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
